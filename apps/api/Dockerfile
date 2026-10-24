@@ -1,5 +1,5 @@
 # ARKON API — multi-stage (pnpm monorepo → NestJS + Prisma)
-FROM node:20-alpine AS base
+FROM node:22.23.4-alpine AS base
 RUN apk add --no-cache openssl postgresql-client
 RUN corepack enable && corepack prepare pnpm@9.15.0 --activate
 WORKDIR /app

@@ -1,5 +1,5 @@
 # ARKON Web — Vite build + Nginx (proxies /api → api:8000)
-FROM node:20-alpine AS build
+FROM node:22.23.4-alpine AS build
 RUN corepack enable && corepack prepare pnpm@9.15.0 --activate
 WORKDIR /app
 
